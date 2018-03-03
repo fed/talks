@@ -1,0 +1,2 @@
+https://github.com/fknussel/react-talk
+https://github.com/fknussel/es-talk

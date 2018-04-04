@@ -12,5 +12,8 @@
   "scripts": {
     "build": "./talks.sh",
     "test": "echo \"Error: no test specified\""
+  },
+  "dependencies": {
+    "surge": "^0.20.1"
   }
 }

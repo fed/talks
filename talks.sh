@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Set up a talks.txt file that contains a list of all the repositories,
 # one per line. Seen here: https://gist.github.com/richardhsu/10247078
 

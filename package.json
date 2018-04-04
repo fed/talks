@@ -1,0 +1,16 @@
+{
+  "name": "talks",
+  "version": "1.0.0",
+  "description": "Automatically deploy slides for my talks",
+  "main": "index.js",
+  "author": "Federico Knüssel <fknussel@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fknussel/talks.git"
+  },
+  "scripts": {
+    "build": "./talks.sh",
+    "test": "echo \"Error: no test specified\""
+  }
+}

@@ -1,2 +1,4 @@
-https://github.com/fknussel/react-talk
-https://github.com/fknussel/es-talk
+https://github.com/fknussel/isomorphic-js
+https://github.com/fknussel/react-primer
+https://github.com/fknussel/redux-primer
+https://github.com/fknussel/ecmascript

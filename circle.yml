@@ -1,0 +1,10 @@
+machine:
+  node:
+    version: 8.9.1
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - npm run build
+      - surge --project . --domain https://talks.fknussel.com

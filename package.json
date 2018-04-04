@@ -1,8 +1,7 @@
 {
   "name": "talks",
   "version": "1.0.0",
-  "description": "Automatically deploy slides for my talks",
-  "main": "index.js",
+  "description": "Automating the deployment of my talks and workshops slides",
   "author": "Federico Knüssel <fknussel@gmail.com>",
   "license": "MIT",
   "repository": {

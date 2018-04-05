@@ -15,7 +15,7 @@ cp index.html slides
 echo `date` >> slides/version.txt
 
 while read p; do
-  printf "\nRepository: $p\n"
+  printf "\n🌎 Repository: $p\n\n"
   git clone $p;
   [[ $p =~ $reponame ]]
 
@@ -23,11 +23,25 @@ while read p; do
   folder="${BASH_REMATCH[1]}"
   cd $folder
 
-  echo "Fetching dependencies..."
+  printf "\n📦 Fetching dependencies...\n\n"
   npm install
 
-  echo "Building..."
+  printf "\n🔨 Building...\n"
   npm run build
+
+  # Temporary hack since we can't deploy nested node_modules dirs to Surge.sh.
+  if [ -f node_modules/slides-base-css/style.css ]; then
+    printf "\n🎨 Bringing in base styles...\n"
+
+    # Copy the base styles file to the build directory.
+    cp node_modules/slides-base-css/style.css build/base.css
+
+    # Update the link to the base stylesheet within the HTML file.
+    sed -i '' 's/node_modules\/slides-base-css\/style.css/base.css/g' build/index.html
+
+    # Get rid of the nested node_modules folder.
+    rm -rf build/node_modules
+  fi
 
   # Move the dist files to the root directory and remove the source files.
   mv build ../slides/$folder

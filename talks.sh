@@ -37,7 +37,7 @@ while read p; do
     cp node_modules/slides-base-css/style.css build/base.css
 
     # Update the link to the base stylesheet within the HTML file.
-    sed -i '' 's/node_modules\/slides-base-css\/style.css/base.css/g' build/index.html
+    perl -pi -e 's/node_modules\/slides-base-css\/style.css/base.css/g' build/index.html
 
     # Get rid of the nested node_modules folder.
     rm -rf build/node_modules
@@ -48,7 +48,7 @@ while read p; do
   cd ..
   rm -rf $folder
 
-  printf "\n$folder has been successfully built ✅\n"
+  printf "\n✅ $folder has been successfully built\n"
 done < talks.txt
 
-printf "\nDone ✨\n\n"
+printf "\n✨ Done\n\n"

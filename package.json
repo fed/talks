@@ -1,6 +1,6 @@
 {
   "name": "talks",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Automating the deployment of my talks and workshops slides",
   "author": "Federico Knüssel <fknussel@gmail.com>",
   "license": "MIT",

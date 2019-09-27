@@ -1,4 +1,4 @@
-# Talks
+# talks [![Netlify Status](https://api.netlify.com/api/v1/badges/7b38ca47-2239-41cc-b676-7f52ca238763/deploy-status)](https://app.netlify.com/sites/boring-mirzakhani-3aa1e6/deploys)
 
 ## Adding a new slide deck
 
@@ -15,5 +15,3 @@ Make sure to grant `talks.sh` the appropriate permissions:
 ```
 chmod +x talks.sh
 ```
-
-CircleCI automatically handles the deployment to [surge.sh](https://surge.sh).

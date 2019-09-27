@@ -6,13 +6,13 @@
 reponame="https://github.com/fknussel/([a-zA-Z0-9._-]+)$"
 
 # Create the base folder that will get deployed.
-mkdir slides
+mkdir public
 
-# We need to deploy the index.html file.
-cp index.html slides
+# We need to set up Netlify's redirects.
+cp _redirects public
 
 # Create a timestamp file so that we know when the last deploy occured.
-echo `date` >> slides/version.txt
+echo `date` >> public/version.txt
 
 while read p; do
   printf "\n🌎 Repository: $p\n\n"
@@ -44,7 +44,7 @@ while read p; do
   fi
 
   # Move the dist files to the root directory and remove the source files.
-  mv build ../slides/$folder
+  mv build ../public/$folder
   cd ..
   rm -rf $folder
 

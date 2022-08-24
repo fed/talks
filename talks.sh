@@ -3,7 +3,7 @@
 # Set up a talks.txt file that contains a list of all the repositories,
 # one per line. Seen here: https://gist.github.com/richardhsu/10247078
 
-reponame="https://github.com/fknussel/([a-zA-Z0-9._-]+)$"
+reponame="https://github.com/fed/([a-zA-Z0-9._-]+)$"
 
 # Create the base folder that will get deployed.
 mkdir public

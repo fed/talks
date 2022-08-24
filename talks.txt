@@ -1,6 +1,6 @@
-https://github.com/fknussel/isomorphic-js
-https://github.com/fknussel/react-primer
-https://github.com/fknussel/redux-primer
-https://github.com/fknussel/ecmascript
-https://github.com/fknussel/frp-intro
-https://github.com/fknussel/frp-examples
+https://github.com/fed/isomorphic-js
+https://github.com/fed/react-primer
+https://github.com/fed/redux-primer
+https://github.com/fed/ecmascript
+https://github.com/fed/frp-intro
+https://github.com/fed/frp-examples
